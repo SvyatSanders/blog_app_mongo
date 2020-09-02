@@ -1,0 +1,25 @@
+docker run --name some-mongo -d -p 27017:27017 mongo
+docker exec -it 47ab993ff2d3 bash
+
+go get go.mongodb.org/mongo-driver/mongo
+
+blog_posts   ->   posts
+
+db.posts.insertOne({"id": "0", "title": "How to Keep Your Resume to One Page", "date": "2020-07-17 21:49:00", "link": "https://www.wikihow.com/Keep-Your-Resume-to-One-Page", "comment": `While a longer resume may be merited if you're applying for an executive-level position or have 20+ years of experience, for most people a one-page resume is sufficient. Any longer than that and you run the risk that the hiring manager won't read the whole thing. If your resume is longer than a page, it's likely bloated with information that you don't need. Keep your resume to one page by tailoring it to the job you're applying for, then editing that content so that it's actionable, direct, and specific. If after that your resume is still more than a page long, try adjusting the formatting to see if you can get it to fit.`})
+db.posts.insertOne({"id": "1", "title": "test", "date": "2020-07-17 21:49:00", "link": "test", "comment": `test`})
+
+
+show databases;
+use database_name;
+
+show collections;
+db.posts.find();    // ищем в коллекции posts
+    db.posts.find().pretty();
+db.posts.drop();
+
+db.users.remove({name : "Tom"})
+
+("How to Delete an Instagram Account", 
+"2020-07-22 21:49:00", 
+"https://www.wikihow.com/Delete-an-Instagram-Account", 
+"This wikiHow teaches you how to permanently delete your Instagram account. Once your account is deleted, your photos, videos, followers, and all other account data will be gone forever, and you will not be able to use the same username again. Alternatively, if you don't want to delete your photos, you can deactivate your Instagram account instead."),

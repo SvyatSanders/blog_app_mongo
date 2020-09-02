@@ -1,0 +1,5 @@
+{
+  "site_name": "Blog",
+  "db_link": "mongodb://127.0.0.1:27017",
+  "log_file": "test_log.txt"
+}

@@ -1,0 +1,2 @@
+2020/08/09 13:36:33 try to load configuration: Key: 'configuration.LogFile' Error:Field validation for 'LogFile' failed on the 'required' tag
+2020/08/09 13:36:33 use default
